@@ -20,12 +20,13 @@ function exploreMore(){
     btn.innerHTML="Explore-More"
   }
 }
+
+
 document.querySelectorAll(".read-more").forEach(function(button) {
-    button.addEventListener("click", function() {
-      toggleContent(button);
-    });
+  button.addEventListener("click", function() {
+    toggleContent(button);
   });
-  
+});
 
 function toggleContent(button) {
     let parent = button.closest('.OurService-box');
@@ -40,3 +41,4 @@ function toggleContent(button) {
      
     }
   }
+  
